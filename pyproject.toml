@@ -20,6 +20,7 @@ scipy = "^1.9.1"
 scikit-learn = "^1.1.2"
 tqdm = "^4.64.1"
 jinja2 = "^3.1.2"
+scikit-learn-extra = "^0.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
