@@ -26,6 +26,7 @@ autopep8 = "^2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 autopep8 = "^2.0.0"
+notebook = "^6.5.2"
 
 [build-system]
 requires = ["poetry-core"]
