@@ -19778,6 +19778,18 @@ class="
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>It's clear that SVD is much improved over the collaborative models.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -20007,7 +20019,8 @@ class="
 <p>7.1 The baseline user-user model dominates the baseline item-item model with both precision and recall being larger for the former model for all values of k.</p>
 <p>7.2 The optimized models all are marginally improved in recall and precision from their baseline counterparts. However for all models saw recall improved with k = 10 at a cost of some marginal loss in precision. While F1 scores weren't calculated I would guesstimate that k = 10 models would have the best scores. <strong><em>So the optimized user-user k = 10 model is the best out of those four.</em></strong></p>
 <p>7.3 The factorization model tries to predict based on latent features which has the benefit of reducing dimensionaity and compute time at the possible cost of explainability.</p>
-<p>7.4 These models dominated the collaborative filtering models with improved RMSE, precision and recall. Optimizing them, however, didn't have much of an effect. Performance differences were in the noise.  Seems like overfitting to too many features. Overall, I would go with the k = 10 SVD model. Another interesting though is how <em>inaccurate</em> the models are. Recall for k = 10 SVD is essentially a coin toss and that's the best we can do!</p>
+<p>7.4 These models dominated the collaborative filtering models with improved RMSE, precision and recall. I would surmise that we are not trying to predict based on imperfect similarities and averaging but on best fit features with every data point contributing to improving the accuracy of the model.</p>
+<p>Optimizing them, however, didn't have much of an effect. Performance differences were in the noise.  Seems like overfitting to too many features. Overall, I would go with the k = 10 SVD model. Another interesting fact is how <em>inaccurate</em> the models are. Recall for k = 10 SVD is essentially a coin toss and that's the best we can do!</p>
 
 </div>
 </div>
